@@ -15,7 +15,7 @@ my_socket.bind(('0.0.0.0',8820))
 for j in range(3):
     my_socket.listen(1)
 
-
+# starting the threads
 threads = []
 for i in range(5):
     t = threading.Thread(target=handle_client())
